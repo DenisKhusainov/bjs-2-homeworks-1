@@ -17,6 +17,9 @@ function summElementsWorker(...arr){
   }
 }
 function differenceMaxMinWorker(...arr){
+  if ( arr.length === 0){
+    return 0
+}
   let min = Math.min(...arr);
   let max = Math.max(...arr);
   return max - min

@@ -1,3 +1,4 @@
+"use strict"
 function getArrayParams(...arr){
   let min = Math.min(...arr);
   let max = Math.max(...arr);
@@ -51,8 +52,8 @@ function averageEvenElementsWorker(...arr){
               sumEvenElement += arr[i];
               countEvenElement ++;
           }
-          return Number((sumEvenElement / countEvenElement).toFixed(2))
-      } 
+      }
+      return Number((sumEvenElement / countEvenElement).toFixed(2)) 
 }
 function makeWork(arrOfArr, func){
   let maxWorkerResult = -Infinity;
